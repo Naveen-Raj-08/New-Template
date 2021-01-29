@@ -9,6 +9,7 @@
 .wrapper {
   background: #F1EEEA;
   max-width: 1920px;
+  padding: 0 25px;
   margin: 0 auto;
 }
 
@@ -169,8 +170,8 @@
 .wrapper .section-1 .section-1-image .banner-second-image img {
   max-width: 100%;
   width: 400px;
-  -webkit-box-shadow: 0 35px 20px #777;
-          box-shadow: 0 35px 20px #777;
+  -webkit-box-shadow: 0px 8px 48px -12px #343434;
+          box-shadow: 0px 8px 48px -12px #343434;
 }
 
 .wrapper .section-1 .section-1-side-menu {
@@ -237,6 +238,7 @@
 .wrapper .section-2 .section-2-background img {
   max-width: 100%;
   width: 80%;
+  height: 80vh;
 }
 
 .wrapper .section-2 .section-2-background .image-text {
@@ -251,13 +253,14 @@
   text-align: right;
   text-transform: capitalize;
   font-weight: 600;
+  color: #343434;
 }
 
 .wrapper .section-2 .section-2-background .image-message {
   width: 600px;
-  height: 250px;
+  height: 320px;
   position: absolute;
-  bottom: -28%;
+  bottom: -10%;
   right: 5%;
   padding: 48px 96px;
   background: #656b50;
@@ -277,7 +280,7 @@
   font-size: 19px;
   position: absolute;
   left: 240px;
-  margin-top: 10px;
+  margin-top: 60px;
 }
 
 .wrapper .section-2 .section-2-background .image-message a i {
@@ -290,5 +293,303 @@
 
 .wrapper .section-2 .section-2-background .image-message a:hover i {
   margin-left: 18px;
+}
+
+.wrapper .section-3 {
+  margin-top: 100px;
+}
+
+.wrapper .section-3 .our-service .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.wrapper .section-3 .our-service .service .service-logo i {
+  font-size: 6rem;
+  color: #816843;
+}
+
+.wrapper .section-3 .our-service .service .service-title {
+  font-family: Josefin Sans;
+  padding: 15px 0;
+}
+
+.wrapper .section-3 .our-service .service .service-title h2 {
+  color: #343434;
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.wrapper .section-3 .our-service .service .service-description {
+  text-align: center;
+  padding: 5px 8px;
+}
+
+.wrapper .section-3 .our-service .service .service-description p {
+  font-size: 19px;
+  color: #343434;
+}
+
+.wrapper .section-4 {
+  background: #eee8df;
+}
+
+.wrapper .section-4 .our-best .our-best-left .left-title {
+  font-family: Josefin Sans;
+}
+
+.wrapper .section-4 .our-best .our-best-left .left-title h2 {
+  font-size: 83px;
+  color: #343434;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.wrapper .section-4 .our-best .our-best-left .left-descritpion p {
+  font-size: 25px;
+  color: #343434;
+  font-weight: 0;
+  text-transform: capitalize;
+}
+
+.wrapper .section-4 .our-best .our-best-left .left-image {
+  margin-top: 50px;
+}
+
+.wrapper .section-4 .our-best .our-best-left .left-image img {
+  max-width: 100%;
+  width: 95%;
+  -webkit-box-shadow: 0px 8px 48px -12px #343434;
+          box-shadow: 0px 8px 48px -12px #343434;
+}
+
+.wrapper .section-4 .our-best .right-text .right-text-heading {
+  font-family: Josefin Sans;
+}
+
+.wrapper .section-4 .our-best .right-text .right-text-heading h2 {
+  font-size: 38px;
+  color: #343434;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 15px 0;
+}
+
+.wrapper .section-4 .our-best .right-text .right-text-description p {
+  font-size: 19px;
+  color: #343434;
+  font-weight: 0;
+  letter-spacing: 0.5px;
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+  line-height: 30px;
+}
+
+.wrapper .section-4 .our-best .text-tab .text-tab-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: Josefin Sans;
+  cursor: pointer;
+}
+
+.wrapper .section-4 .our-best .text-tab .text-tab-heading h4 {
+  font-size: 25px;
+  padding: 16px 0;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #343434;
+}
+
+.wrapper .section-4 .our-best .text-tab .text-tab-heading .rotate {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.wrapper .section-4 .our-best .text-tab .text-tab-heading i {
+  font-size: 20px;
+  color: #343434;
+}
+
+.wrapper .section-4 .our-best .text-tab .text-tab-description {
+  display: none;
+}
+
+.wrapper .section-4 .our-best .text-tab .text-tab-description p {
+  font-size: 18px;
+  color: #343434;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+.wrapper .section-5 {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.wrapper .section-5 .our-team {
+  margin-top: 60px;
+}
+
+.wrapper .section-5 .our-team .team-heading {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper .section-5 .our-team .team-heading h3 {
+  font-size: 38px;
+  color: #B69B74;
+  text-transform: capitalize;
+  font-family: Josefin Sans;
+  font-weight: 600;
+}
+
+.wrapper .section-5 .our-team .team-heading p {
+  font-size: 19px;
+  color: #343434;
+}
+
+.wrapper .section-5 .Team-members {
+  margin-top: 50px;
+}
+
+.wrapper .section-5 .Team-members .team {
+  padding: 0;
+}
+
+.wrapper .section-5 .Team-members .team .team-member-image img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.wrapper .section-5 .Team-members .team .team-member-profile {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.wrapper .section-5 .Team-members .team .team-member-profile #name {
+  font-family: Josefin Sans;
+  font-size: 38px;
+  color: #343434;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 20px 0 30px 0;
+}
+
+.wrapper .section-5 .Team-members .team .team-member-profile #designation {
+  color: #B69B74;
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 15px 0;
+  font-family: sans-serif;
+}
+
+.wrapper .section-5 .Team-members .team .team-member-profile #phone {
+  font-size: 19px;
+  font-family: sans-serif;
+  color: #343434;
+  font-weight: 100;
+}
+
+.wrapper .section-5 .Team-members .team .team-member-profile #mail {
+  font-size: 19px;
+  font-family: sans-serif;
+  color: #343434;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.wrapper .section-5 .Team-members .team .team-member-profile .VL {
+  width: 2px;
+  height: 50px;
+  background: #000;
+  margin: 0 auto;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+.wrapper .section-5 .Team-members .team .team-member-profile p {
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #343434;
+  font-weight: 0;
+  font-family: sans-serif;
+}
+
+.wrapper .section-6 {
+  background: #eee8df;
+}
+
+.wrapper .section-6 .About-us {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.wrapper .section-6 .About-us .about-heading {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.wrapper .section-6 .About-us .about-heading h3 {
+  font-size: 38px;
+  color: #343434;
+  font-family: Josefin Sans;
+  font-weight: 500;
+}
+
+.wrapper .section-6 .About-us .thumbnail-image div {
+  position: relative;
+}
+
+.wrapper .section-6 .About-us .thumbnail-image div img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 500px;
+  opacity: 0.65;
+}
+
+.wrapper .section-6 .About-us .thumbnail-image div i {
+  font-size: 100px;
+  color: #f5f5f5;
+  position: absolute;
+  left: 47%;
+  top: 47%;
+  cursor: pointer;
+  -webkit-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.wrapper .section-6 .About-us .thumbnail-image div i:hover {
+  font-size: 110px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,12 @@
 $bg-color:  #F1EEEA;
+$bg-color2: #eee8df;
 $text-color1: #000;
 $text-color2: #343434;
+$text-color3: #B69B74;
 $btn-color: #816843;
+
+$shadow: 0px 8px 48px -12px $text-color2;
+
 @import url("https://fonts.googleapis.com/css?family=Josefin Sans");
 
 @mixin responsive($max-width, $width){
@@ -30,6 +35,7 @@ $btn-color: #816843;
 .wrapper{
     background: $bg-color;
     max-width: 1920px;
+    padding: 0 25px;
     margin: 0 auto;
     .header{
         padding: 10px 30px;
@@ -134,7 +140,7 @@ $btn-color: #816843;
                right: -10%;
             img{
                 @include responsive(100%, 400px);
-                box-shadow: 0 35px 20px #777;
+                box-shadow: $shadow;
             }
            }
         }
@@ -176,6 +182,7 @@ $btn-color: #816843;
             position: relative;
             img {
                 @include responsive(100%, 80%);
+                height: 80vh;
             }
             .image-text{
                 position: absolute;
@@ -187,13 +194,14 @@ $btn-color: #816843;
                     text-align: right;
                     text-transform: capitalize;
                     font-weight: 600;
+                    color: $text-color2;
                 }
             }
             .image-message{
                 width: 600px;
-                height: 250px;
+                height: 320px;
                 position: absolute;
-                bottom: -28%;
+                bottom: -10%;
                 right: 5%;
                 padding: 48px 96px;
                 background: #656b50;
@@ -210,7 +218,7 @@ $btn-color: #816843;
                     font-size: 19px;
                     position: absolute;
                     left: 240px;
-                    margin-top: 10px;
+                    margin-top: 60px;
                     i{
                         font-size: 19px;
                         margin: 5px 0;
@@ -224,6 +232,246 @@ $btn-color: #816843;
                     }
                 }
 
+            }
+        }
+    }
+    .section-3{
+        margin-top: 100px;
+        .our-service{
+            .service{
+                @include flex(column, center, center, nowrap);
+                .service-logo{
+                    i{
+                        font-size: 6rem;
+                        color: $btn-color;
+                    }
+                }
+                .service-title{
+                    font-family: Josefin Sans;
+                    padding: 15px 0;
+                    h2{
+                        color: $text-color2;
+                        font-size: 38px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                }
+                .service-description{
+                    text-align: center;
+                    padding: 5px 8px;
+                    p{
+                        font-size: 19px;
+                        color: $text-color2;
+                    }
+                }
+            }
+        }
+    }
+    .section-4{
+        background: $bg-color2;
+        .our-best{
+            .our-best-left{
+                .left-title{
+                    font-family: Josefin Sans;
+                    h2{
+                        font-size: 83px;
+                        color: $text-color2;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                }
+                .left-descritpion{
+                    p{
+                        font-size: 25px;
+                        color: $text-color2;
+                        font-weight: 0;
+                        text-transform: capitalize;
+                    }
+                }
+                .left-image{
+                  margin-top: 50px;
+                    img{
+                        @include responsive(100%, 95%); 
+                        box-shadow: $shadow;
+                    }
+                } 
+            }
+            .right-text{
+                .right-text-heading{
+                  
+                    font-family: Josefin Sans;
+                    h2{
+                        font-size: 38px;
+                        color: $text-color2;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        margin: 15px 0;
+                    }
+                }
+                .right-text-description{
+                    p{
+                        font-size: 19px;
+                        color: $text-color2;
+                        font-weight: 0;
+                        letter-spacing: 0.5px;
+                        padding-bottom: 24px;
+                        margin-bottom: 16px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .text-tab{
+                .text-tab-heading{
+                    @include flex(row, space-between, center, nowrap);
+                    font-family: Josefin Sans;
+                    cursor: pointer;
+                    h4{
+                        font-size: 25px;
+                        padding: 16px 0;
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        color: $text-color2;
+                    } 
+                    .rotate{
+                        transform: rotate(45deg);
+                    }
+                    i{
+                        font-size: 20px;
+                        color: $text-color2;
+                    }
+                }
+                .text-tab-description{
+                    display: none;
+                    p{
+                        font-size: 18px;
+                        color: $text-color2;
+                        letter-spacing: 0.5px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .section-5{
+        max-width: 1600px;
+        margin: 0 auto;
+        .our-team{
+          margin-top: 60px;
+            .team-heading{
+                width: 800px;
+                margin: 0 auto;
+                text-align: center;
+                h3{
+                    font-size: 38px;
+                    color: $text-color3;
+                    text-transform: capitalize;
+                    font-family: Josefin Sans;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 19px;
+                    color: $text-color2;
+                }
+            }
+        }
+        .Team-members{
+            margin-top: 50px;
+            .team{
+                padding: 0;
+                .team-member-image{
+                    img{
+                        @include responsive(100%, 100%);
+                    }
+                }
+                .team-member-profile{
+                    text-align: center;
+                    margin-top: 60px;
+                    #name{
+                        font-family: Josefin Sans;
+                        font-size: 38px;
+                        color: $text-color2;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        margin: 20px 0 30px 0;
+                    }
+                    #designation{
+                        color: $text-color3;
+                        font-size: 19px;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                        margin: 15px 0;
+                        font-family: sans-serif;
+                    }
+                    #phone{
+                        font-size: 19px;
+                        font-family: sans-serif;
+                        color: $text-color2;
+                        font-weight: 100;
+                    }
+                    #mail{
+                        font-size: 19px;
+                        font-family: sans-serif;
+                        color: $text-color2;
+                        font-weight: 100;
+                        margin-bottom: 30px;
+                    }
+                    .VL{
+                        width: 2px;
+                        height: 50px;
+                        background: $text-color1;
+                        margin: 0 auto;
+                        transition: height 0.3s ease-in-out;
+                    }
+                    p{
+                        padding: 15px 20px;
+                        font-size: 16px;
+                        color: $text-color2;
+                        font-weight: 0;
+                        font-family: sans-serif;
+                    }
+                   
+                }
+            }
+        }
+    }
+    .section-6{
+        background: $bg-color2;
+        .About-us{
+            max-width: 1600px;
+            margin: 0 auto;
+            .about-heading{
+                width: 600px;
+                margin: 0 auto;
+                text-align: center;
+                padding: 15px 0;
+                h3{
+                    font-size: 38px;
+                    color: $text-color2;
+                    font-family: Josefin Sans;
+                    font-weight: 500;
+                }
+            }
+            .thumbnail-image{
+                div{
+                    position: relative;
+                    img{
+                        @include responsive(100%, 100%);
+                        max-height: 500px;
+                        opacity: 0.65;
+                    }
+                    i{
+                        font-size: 100px;
+                        color: #f5f5f5; 
+                        position: absolute;
+                        left: 47%;
+                        top: 47%;
+                        cursor: pointer;
+                        transition: font-size 0.3s ease-in-out;
+                        &:hover{
+                            font-size: 110px;
+                        }
+                    }
+                }
             }
         }
     }
