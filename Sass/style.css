@@ -630,4 +630,9 @@
 .wrapper .section-6 .About-us .thumbnail-image div .thumbnail-caption a:hover i {
   right: -10px;
 }
+
+.wrapper .section-6 .footer-image img {
+  max-width: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

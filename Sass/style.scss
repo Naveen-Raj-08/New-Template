@@ -508,5 +508,10 @@ $shadow: 0px 8px 48px -12px $text-color2;
                 }
             }
         }
+        .footer-image{
+            img{
+                @include responsive(100%, 100%);
+            }
+        }
     }
 }
