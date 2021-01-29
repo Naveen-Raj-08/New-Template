@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    $("div#tab-1").click(function(){
+        $('#tab-text').slideToggle('slow');
+        $('#icon').toggleClass('rotate');
+    })
+})
+$(document).ready(function(){
+    $("div#tab-2").click(function(){
+        $('#tab-text2').slideToggle('slow');
+        $('#icon2').toggleClass('rotate');
+    })
+})
+$(document).ready(function(){
+    $("div#tab-3").click(function(){
+        $('#tab-text3').slideToggle('slow');
+        $('#icon3').toggleClass('rotate');
+    })
+})
