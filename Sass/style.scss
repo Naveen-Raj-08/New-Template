@@ -4,7 +4,7 @@ $text-color1: #000;
 $text-color2: #343434;
 $text-color3: #B69B74;
 $btn-color: #816843;
-
+$btn-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 $shadow: 0px 8px 48px -12px $text-color2;
 
 @import url("https://fonts.googleapis.com/css?family=Josefin Sans");
@@ -39,45 +39,54 @@ $shadow: 0px 8px 48px -12px $text-color2;
     margin: 0 auto;
     .header{
         padding: 10px 30px;
-        @include grid(10% 90%, 0, center);
+        @include grid(15% 85%, 0, center);
+        background: $bg-color;
+        width: 100%;
         .Logo{
            @include grid(50% 50%, 0, center);
             .logo-image{
             img{
-                @include responsive(100%, 100%)
+                @include responsive(100%, 70%)
             }
         }.logo-text{
             padding: 10px 15px;
             h1{
                 font-family: Josefin Sans;
-                font-size: 30px;
+                font-size: 38px;
                 color: $text-color1;
                 font-weight: 800;
+                width: 100%;
+                margin-top: 12px;
             }
         }
         }
         .Navigation{
             nav{
                 float: right;
+                margin-top: 5px;
                 ul{
                     @include flex(row, space-between, center, nowrap);
                     list-style: none;
+                    margin: 0;
                     li{
                         padding: 10px 15px;
                         a{
                             text-decoration: none;
-                            color: $text-color1;
-                            font-size: 20px;
+                            color: $text-color2;
+                            font-size: 18px;
                             letter-spacing: 0.5px;
                             font-family: sans-serif;
                             text-transform: capitalize;
                             button{
-                                padding: 0px 15px;
-                                border: 2px solid $btn-color;
+                                padding: 8px 30px;
+                                border: 2px solid $text-color3;
                                 color: $btn-color;
                                 font-family: sans-serif;
+                                transition: $btn-transition;
                                 &:hover{
-                               color: #fff;
+                                    color: #fff;
+                                    background: $text-color3;
+                                    box-shadow: $shadow;
                                 }
                             }
                         }
@@ -114,14 +123,16 @@ $shadow: 0px 8px 48px -12px $text-color2;
             .banner-text-button{
                 button{
                     padding: 19px 51px;
-                    border: 2px solid $btn-color;
+                    border: 2px solid $text-color3;
                     color: $btn-color;
                     font-size: 16px;
                     text-transform: uppercase;
                     letter-spacing: 2px;
+                    transition: $btn-transition;
                     &:hover{
                         color: #fff;
-                        background: burlywood;
+                        background: $text-color3;
+                        box-shadow: $shadow;
                     }
                 }
                 
@@ -148,10 +159,12 @@ $shadow: 0px 8px 48px -12px $text-color2;
             padding: 10px 10px;
             .sidebar-icons{
                 @include flex(column, space-between, center, nowrap);
-                i{
+                a{
+                    i{
                     font-size: 30px;
                     color: $text-color2;
                     margin: 15px 0;
+                    }
                 }
             }
             .VL{
@@ -381,8 +394,14 @@ $shadow: 0px 8px 48px -12px $text-color2;
             .team{
                 padding: 0;
                 .team-member-image{
+                    overflow: hidden;
                     img{
                         @include responsive(100%, 100%);
+                        transition: transform 0.7s ease-in-out;
+                        cursor: pointer;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
                     }
                 }
                 .team-member-profile{
@@ -462,15 +481,15 @@ $shadow: 0px 8px 48px -12px $text-color2;
                         opacity: 0.65;
                     }
                     #play-button, #play-button2{
-                        font-size: 100px;
+                        font-size: 80px;
                         color: #f5f5f5; 
                         position: absolute;
-                        left: 47%;
+                        left: 48%;
                         top: 38%;
                         cursor: pointer;
                         transition: font-size 0.3s ease-in-out;
                         &:hover{
-                            font-size: 110px;
+                            font-size: 85px;
                         }
                     }
                     .thumbnail-caption{
