@@ -281,6 +281,8 @@
   position: absolute;
   left: 240px;
   margin-top: 60px;
+  font-family: sans-serif;
+  text-transform: capitalize;
 }
 
 .wrapper .section-2 .section-2-background .image-message a i {
@@ -578,18 +580,54 @@
   opacity: 0.65;
 }
 
-.wrapper .section-6 .About-us .thumbnail-image div i {
+.wrapper .section-6 .About-us .thumbnail-image div #play-button, .wrapper .section-6 .About-us .thumbnail-image div #play-button2 {
   font-size: 100px;
   color: #f5f5f5;
   position: absolute;
   left: 47%;
-  top: 47%;
+  top: 38%;
   cursor: pointer;
   -webkit-transition: font-size 0.3s ease-in-out;
   transition: font-size 0.3s ease-in-out;
 }
 
-.wrapper .section-6 .About-us .thumbnail-image div i:hover {
+.wrapper .section-6 .About-us .thumbnail-image div #play-button:hover, .wrapper .section-6 .About-us .thumbnail-image div #play-button2:hover {
   font-size: 110px;
+}
+
+.wrapper .section-6 .About-us .thumbnail-image div .thumbnail-caption {
+  text-align: center;
+  padding: 20px 0;
+  font-family: Josefin Sans;
+}
+
+.wrapper .section-6 .About-us .thumbnail-image div .thumbnail-caption h3 {
+  font-size: 38px;
+  color: #343434;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.wrapper .section-6 .About-us .thumbnail-image div .thumbnail-caption a {
+  color: #B69B74;
+  text-decoration: none;
+  font-size: 19px;
+  padding: 0px 30px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.wrapper .section-6 .About-us .thumbnail-image div .thumbnail-caption a i {
+  font-size: 19px;
+  margin-left: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.wrapper .section-6 .About-us .thumbnail-image div .thumbnail-caption a:hover i {
+  right: -10px;
 }
 /*# sourceMappingURL=style.css.map */
