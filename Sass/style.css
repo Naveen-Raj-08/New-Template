@@ -779,11 +779,17 @@
   background: transparent;
   border: 2px solid #B69B74;
   color: #B69B74;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 .wrapper .section-7 .form form button:hover {
   -webkit-box-shadow: 0px 8px 48px -12px #343434;
           box-shadow: 0px 8px 48px -12px #343434;
+  background: #B69B74;
+  color: #f5f5f5;
 }
 
 .wrapper .section-7 .form form button:focus {
