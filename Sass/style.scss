@@ -52,7 +52,7 @@ $shadow: 0px 8px 48px -12px $text-color2;
         overflow: hidden;
         @include grid(15% 85%, 0, center);
         background: $bg-color;
-        width: 100%;
+        width: 100%;    
         .Logo{
            @include grid(50% 50%, 0, center);
             .logo-image{
