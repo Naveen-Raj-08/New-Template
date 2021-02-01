@@ -11,10 +11,20 @@
   max-width: 1920px;
   padding: 0 25px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.wrapper .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .wrapper .header {
   padding: 10px 30px;
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 15% 85%;
@@ -95,14 +105,17 @@
 }
 
 .wrapper .header .Navigation nav ul li a button {
-  padding: 8px 30px;
-  border: 2px solid #B69B74;
+  padding: 10px 30px;
+  border: 3px solid #B69B74;
   color: #816843;
   font-family: sans-serif;
   -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
 }
 
 .wrapper .header .Navigation nav ul li a button:hover {
@@ -115,8 +128,8 @@
 .wrapper .section-1 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 50% 10%;
-      grid-template-columns: 40% 50% 10%;
+  -ms-grid-columns: 42% 50% 8%;
+      grid-template-columns: 42% 50% 8%;
   grid-gap: 0;
   -webkit-box-align: none;
       -ms-flex-align: none;
@@ -162,6 +175,7 @@
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  font-weight: 600;
 }
 
 .wrapper .section-1 .section-1-text .banner-text-button button:hover {
@@ -177,27 +191,30 @@
 
 .wrapper .section-1 .section-1-image .banner-main-image img {
   max-width: 100%;
-  width: 100%;
+  width: 90%;
 }
 
 .wrapper .section-1 .section-1-image .banner-second-image {
   position: absolute;
-  bottom: -5%;
-  right: -10%;
+  bottom: -100px;
+  right: 0;
 }
 
 .wrapper .section-1 .section-1-image .banner-second-image img {
   max-width: 100%;
-  width: 400px;
+  width: 500px;
   -webkit-box-shadow: 0px 8px 48px -12px #343434;
           box-shadow: 0px 8px 48px -12px #343434;
 }
 
-.wrapper .section-1 .section-1-side-menu {
+.wrapper .section-1 .section-1-image .section-1-side-menu {
   padding: 10px 10px;
+  position: absolute;
+  top: 0;
+  right: -100px;
 }
 
-.wrapper .section-1 .section-1-side-menu .sidebar-icons {
+.wrapper .section-1 .section-1-image .section-1-side-menu .sidebar-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,30 +232,30 @@
       flex-wrap: nowrap;
 }
 
-.wrapper .section-1 .section-1-side-menu .sidebar-icons a i {
+.wrapper .section-1 .section-1-image .section-1-side-menu .sidebar-icons a i {
   font-size: 30px;
   color: #343434;
   margin: 15px 0;
 }
 
-.wrapper .section-1 .section-1-side-menu .VL {
+.wrapper .section-1 .section-1-image .section-1-side-menu .VL {
   background: #000;
   width: 3px;
   height: 120px;
   margin: 0 auto;
 }
 
-.wrapper .section-1 .section-1-side-menu .sidebar-about {
-  margin-top: 50px;
+.wrapper .section-1 .section-1-image .section-1-side-menu .sidebar-about {
+  margin-top: 80px;
   padding: 0 30px;
 }
 
-.wrapper .section-1 .section-1-side-menu .sidebar-about h3 {
+.wrapper .section-1 .section-1-image .section-1-side-menu .sidebar-about h3 {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.wrapper .section-1 .section-1-side-menu .sidebar-about h3 a {
+.wrapper .section-1 .section-1-image .section-1-side-menu .sidebar-about h3 a {
   font-size: 25px;
   color: #000;
   letter-spacing: 3px;
@@ -248,6 +265,7 @@
 
 .wrapper .section-2 {
   padding-top: 120px;
+  margin-top: 100px;
 }
 
 .wrapper .section-2 .section-2-background {
@@ -262,7 +280,7 @@
 
 .wrapper .section-2 .section-2-background .image-text {
   position: absolute;
-  right: 5%;
+  right: 30px;
   top: 20%;
 }
 
@@ -667,5 +685,188 @@
 .wrapper .section-6 .footer-image img {
   max-width: 100%;
   width: 100%;
+}
+
+.wrapper .section-7 {
+  max-width: 1096px;
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.wrapper .section-7 .subscribe-form .subscribe-form-heading {
+  font-family: sans-serif;
+}
+
+.wrapper .section-7 .subscribe-form .subscribe-form-heading h3 {
+  font-size: 38px;
+  color: #343434;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.wrapper .section-7 .subscribe-form .subscribe-form-heading p {
+  font-size: 25px;
+  font-weight: 200;
+  color: #343434;
+}
+
+.wrapper .section-7 .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.wrapper .section-7 .form form input {
+  padding: 8px;
+  height: 60px;
+  width: 500px;
+  margin-top: 20px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #343434;
+}
+
+.wrapper .section-7 .form form input::-webkit-input-placeholder {
+  font-size: 20px;
+  font-family: sans-serif;
+  letter-spacing: 0.6px;
+}
+
+.wrapper .section-7 .form form input:-ms-input-placeholder {
+  font-size: 20px;
+  font-family: sans-serif;
+  letter-spacing: 0.6px;
+}
+
+.wrapper .section-7 .form form input::-ms-input-placeholder {
+  font-size: 20px;
+  font-family: sans-serif;
+  letter-spacing: 0.6px;
+}
+
+.wrapper .section-7 .form form input::placeholder {
+  font-size: 20px;
+  font-family: sans-serif;
+  letter-spacing: 0.6px;
+}
+
+.wrapper .section-7 .form form input:focus {
+  outline: none;
+  border-color: #B69B74;
+}
+
+.wrapper .section-7 .form form button {
+  margin: 60px 0;
+  padding: 8;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  background: transparent;
+  border: 2px solid #B69B74;
+  color: #B69B74;
+}
+
+.wrapper .section-7 .form form button:hover {
+  -webkit-box-shadow: 0px 8px 48px -12px #343434;
+          box-shadow: 0px 8px 48px -12px #343434;
+}
+
+.wrapper .section-7 .form form button:focus {
+  outline: none;
+}
+
+.wrapper .section-7 .form .form-text p {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #B69B74;
+  letter-spacing: 0.5px;
+}
+
+.wrapper .footer-section {
+  margin-top: 50px;
+  background: #2A2525;
+}
+
+.wrapper .footer-section .footer-1 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.wrapper .footer-section .footer-1 .footer-company-details {
+  margin-top: 50px;
+}
+
+.wrapper .footer-section .footer-1 .footer-company-details .company-address h3 {
+  font-size: 25px;
+  color: #B69B74;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.wrapper .footer-section .footer-1 .footer-company-details .company-address p {
+  margin-top: 20px;
+  font-size: 19px;
+  color: #f5f5f5;
+  font-weight: 500;
+}
+
+.wrapper .footer-section .footer-2 .footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.wrapper .footer-section .footer-2 .footer-icons i {
+  color: #B69B74;
+  font-size: 38px;
+  margin: 20px 0;
+}
+
+.wrapper .footer-section .footer-2 .footer-icons .VL {
+  background: #B69B74;
+  height: 100px;
+  width: 2px;
+}
+
+.wrapper .footer-section .footer-2 .footer-copyright {
+  text-align: center;
+  background: #211C1C;
+  padding: 20px 0;
+}
+
+.wrapper .footer-section .footer-2 .footer-copyright p {
+  color: #757575;
+  font-size: 19px;
+  text-transform: capitalize;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
