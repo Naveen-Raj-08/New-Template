@@ -17,16 +17,23 @@ $(document).ready(function(){
     })
 })
 
-// for sticky navbar
-window.onscroll = function() {stickyNav()};
+var num = 100; //number of pixels before modifying styles
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('.header').addClass('fixed');
+    } else {
+        $('.header').removeClass('fixed');
+    }
+});
 
-function stickyNav() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+// Mobile menu
+var icon = document.getElementById('mobile-icon');
+var menu_item = document.getElementById("menu-item");
+$(document).ready(function(){
+    $(icon).click(function(){
+        icon.classList.remove();
+        $(icon).toggleClass("fa-times");
+        $(menu_item).toggle('slow');
+    })
+})
