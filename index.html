@@ -11,7 +11,7 @@
     
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <link rel="stylesheet" href=".//Sass/style.css" />
+    <link rel="stylesheet" href="./Sass/style.css" />
 </head>
 <body>
     <div class="wrapper">
@@ -26,11 +26,38 @@
             </div>
             <div class="Navigation">
                 <nav>
+                    <div class="mobile-menu">
+                        <i class="fas fa-bars" id="mobile-icon"></i>
+                        <div class="item hide" id="menu-item">
+                                <div class="menu-items">
+                                    <a href="#">Home</a>
+                                    <a href="#">Wooden workshop</a>
+                                    <a href="#">Wood makers</a>
+                                    <a href="#">Wooden furniture</a>
+                                    <button>Buy Now</button>
+                                </div>
+                        </div>
+                       
+                    </div>
                     <ul>
-                        <li><a href="#">Home <i class="fas fa-caret-down"></i></a></li>
-                        <li><a href="#">Wooden Workshop <i class="fas fa-caret-down"></i></a></li>
-                        <li><a href="#">Wooden furniture <i class="fas fa-caret-down"></i></a></li>
-                        <li><a href="#"><button>Buy Now</button></a></li>
+                        <li><a class="hover-line" href="#">Home <i class="fas fa-caret-down"></i></a></li>
+                        <li>
+                            <a href="#" class="hover-line" >Wooden Workshop <i class="fas fa-caret-down"></i></a>
+                            <ul class="drop-down">
+                                <li><a href="#">Wooden workshop</a></li>
+                                <li><a href="#">Wood makers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="hover-line" >Wooden furniture <i class="fas fa-caret-down"></i></a>
+                            <ul class="drop-down">
+                                <li><a href="#">Wooden workshop</a></li>
+                                <li><a href="#">Wood makers</a></li>
+                                <li><a href="#">Wooden furniture</a></li>
+                                <li><a href="#">Shop furniture</a></li>
+                            </ul>
+                        </li>
+                        <li><button>Buy Now</button></li>
                     </ul>
                 </nav>
             </div>
@@ -85,7 +112,7 @@
             </section>
             <section>
                 <div class="section-3">
-                    <div class="our-service row p-5">
+                    <div class="our-service row">
                         <div class="service col-sm-4">
                             <div class="service-logo">
                                 <i class="fas fa-cog"></i>
@@ -124,7 +151,7 @@
             </section>
             <section>
                 <div class="section-4">
-                <div class="our-best row p-5">
+                <div class="our-best row">
                     <div class="col-sm-6 our-best-left">
                         <div class="left-title">
                             <h2>unique work <br/>experience</h2>
@@ -136,7 +163,7 @@
                             <img src="./media/04.jpg" alt="design-image" />
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 our-best-right">
                         <div class="right-text">
                             <div class="right-text-heading">
                                 <h2>only natural material</h2>
@@ -238,7 +265,7 @@
                             <h3>Watch video about us</h3>
                         </div>
                     <div class="thumbnail-image row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 box">
                             <img src="./media/background18.jpg" alt="thumbnail-image" />
                             <i id="play-button" class="far fa-play-circle"></i>
                             <div class="thumbnail-caption">
@@ -246,7 +273,7 @@
                                 <a href="#">view more <i id="arrow" class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 box2">
                             <img src="./media/background.jpg" alt="thumbnail-image-2" />
                             <i id="play-button2" class="far fa-play-circle"></i>
                             <div class="thumbnail-caption">
@@ -270,10 +297,10 @@
                         </div>
                         <div class="form">
                             <form>
-                                <input type="text" placeholder="Your name" />
-                                <input type="email" placeholder="Your email" />
-                                <input type="text" placeholder="Your phone" />
-                                <input type="text" placeholder="Your message" />
+                                <input type="text" placeholder="name" />
+                                <input type="email" placeholder="email" />
+                                <input type="text" placeholder="phone" />
+                                <input type="text" placeholder="message" />
                                 <button type="submit">submit</button>
                             </form>
                             <div class="form-text">
